@@ -1,0 +1,10 @@
+# GCP credentials and sensitive files
+gcp-creds.json
+*.pem
+*.key
+*.crt
+*.csr
+
+# OS
+.DS_Store
+Thumbs.db
