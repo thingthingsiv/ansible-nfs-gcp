@@ -1,0 +1,15 @@
+---
+- name: Install Python packages system-wide via apt
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install required Python packages
+      apt:
+        name:
+          - python3-requests
+          - python3-google-auth
+        state: present
